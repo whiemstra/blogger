@@ -1,0 +1,16 @@
+<h3>Post a Comment</h3>
+
+<p><%= form_for [ @article, @comment ] do |a| %>
+    <p>
+      <%= a.label :author_name, "Your Name" %><br>
+      <%= a.text_field :author_name %>
+    </p>
+    <p>
+      <%= a.label :body, "Your Comment" %>
+      <%= a.text_area :body %>
+    </p>
+    <p>
+      <%= a.submit 'Submit'%>
+    </p>
+  <% end %>
+</p>
